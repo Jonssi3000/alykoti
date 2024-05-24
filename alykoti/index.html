@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Älykoti</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="" class="logo"><img src="img/tredu.png" alt="logo"></a>
+
+            <a href="" class="profile"><img src="img/profile.jpg" alt="profile"></a>
+
+        </nav>
+    </header>
+    <div class="device_rent">
+        <h1>Laitenäkymä</h1>
+        <input type="search" name="search" id="search" placeholder="Hae tiettyjä laitteita...">
+        <button class="add_device">Lisää uusi laite</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nimi</th>
+                    <th>Lyhyt kuvaus</th>
+                    <th>Kuva</th>
+                    <th>Varattu?</th>
+                    <th>Sijainti</th>
+                    <th>Toiminnot</th>
+                </tr>
+            </thead>
+        <tr>
+            <td>Robottijääkaappi</td>
+            <td>Automatisoitu jääkaappi</td>
+            <td></td>
+            <td>Ei (vapaa varattavaksi)</td>
+            <td>N 60° 10' 10,2" <a href="#">(katso kartasta)</a></td>
+            <td><a href="#">Muokkaa</a> <a href="#">Poista</a></td>
+        </tr>
+        <tr>
+            <td>Lääkeautomaatti</td>
+            <td>Automatisoitu lääkeautomaatti</td>
+            <td></td>
+            <td>Kyllä (Varaaja: Inka Salminen)</td>
+            <td>S 60° 10' 10,2" <a href="#">(katso kartasta)</a></td>
+            <td><a href="#">Muokkaa</a> <a href="#">Poista</a></td>
+        </tr>
+        <tr>
+            <td>Terapiakissa</td>
+            <td>Yksinäisiin iltoihin vanhuksille</td>
+            <td></td>
+            <td>Ei (vapaa varattavaksi)</td>
+            <td>N 30° 58' 10,2" <a href="#">(katso kartasta)</a></td>
+            <td><a href="#">Muokkaa</a> <a href="#">Poista</a></td>
+        </tr>
+        <tr>
+            <td>Sähköpöytä</td>
+            <td>Moottorillinen sähköpöytä joustavaan käyttöön</td>
+            <td></td>
+            <td>Kyllä (Varaaja: Vesa Salminen)</td>
+            <td>N 35° 58' 192,2" <a href="#">(katso kartasta)</a></td>
+            <td><a href="#">Muokkaa</a> <a href="#">Poista</a></td>
+        </tr>
+        </table>
+        <button>Lataa lisää</button>
+    </div>
+    <div class="address">
+        <h2>Sijainti</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.872273197561!2d23.7404045608249!3d61.49611546171927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468ed8bb55740839%3A0xbc49560014a28de6!2sTampereen%20seudun%20ammattiopisto%20Tredu%2C%20Santalahdentien%20toimipiste!5e0!3m2!1sfi!2sfi!4v1716359155680!5m2!1sfi!2sfi" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <h2>Muokkaustila</h2> 
+    <div class="edit">
+        
+        <div class="edit_box">
+            <div class="box_inputs">
+                <p>Nimi:</p><br>
+                <input type="text" name="dname" id=""><br>
+                <p>Lyhyt kuvaus</p><br>
+                <input type="text" name="description" id=""><br>
+            </div>
+            <div class="box_downlaod">
+                <p>Kuva:</p>
+                <input type="image" src="img/tredu.png" alt="Kuva">
+                <button>Lataa kuva</button>
+            </div>
+            Vaara alue
+            <div class="button-container">
+                <button class="button_yellow">Vaihda paikannin</button>
+                <button class="button_yellow">Poista nykyinen varaaja</button>
+                <button class="button_red">Tyhjennä laitteen varaukset</button>
+                <button class="button_green">Tallenna muutokset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
